@@ -1,52 +1,4 @@
 /*
-// Nome 
-let nome = prompt("digite seu nome:");
-// Caso do nome vazio 
-if (nome == ""){
-    alert("Falha, digite algo para continuar");
-    let nome = prompt("digite seu nome:");
-}
-// idade 
-let anoNascimento = prompt("digite seu ano de nascimento: ");
-const idade = 2025 - anoNascimento;
-// Caso da idade vazio 
-if(anoNascimento = ""){
-    alert("Falha, digite algo para continuar");
-    let anoNascimento = prompt("digite seu ano de nascimento: ");
-}
-// Caso menor de idade 
-else if (idade < 18){
-    alert(`Você é menor de idade volte em ${18 - idade} anos`);
-}
-
-else{
-    alert("Cadastro realizado! Veja os detalhes no console.");
-    console.log(`Bem vindo ${nome} voce tem ${idade} anos `);
-}
-// detalhes dos vinhos 
-
-// Nome do vinho 
-let nomeVinho = prompt("Qual o nome do seu vinho? ");
-
-// Caso do nome do vinho vazio 
-if (nomeVinho == " "){
-    alert("Falha, digite o nome de seu vinho ");
-    let nomeVinho = prompt(` - Vinho tinto \n - Vinho Rose \n - Vinho Branco `); 
-}
-alert("A seguir, veja os detalhes do vinho no console.");
-console.log(nomeVinho);
-
-// Tipo de vinho
-let tipoVinho = prompt(`Digite o tipo do seu vinho: \n - Vinho tinto \n - Vinho Rose  \n - Vinho Branco `);
-
-// Caso do tipo de vinho vazio 
-if (tipoVinho == " "){
-    alert("Falha, digite o tipo de seu vinho ");
-    let tipoVinho = prompt(` - Vinho tinto \n - Vinho Rose \n - Vinho Branco `); 
-}
-alert("A seguir, veja os detalhes do vinho no console.");
-console.log(tipoVinho);
-
 // Tipo de  safra
 let safraVinho = prompt(`Qual ano da safra do vinho ? `);
 
@@ -75,6 +27,7 @@ console.log(estoqueVinho);
 console.log(`nome do vinho é ${nomeVinho}, o tipo de vinho é ${tipoVinho}, e a safra de seu vinho é ${safraVinho}, a quantidade é de ${estoqueVinho} vinhos no estoque `);
    */
 // Educação do site 
+SafraVinho()
 function educacao(){
     const agora = new Date();
     const hora = agora.getHours();
@@ -109,6 +62,7 @@ while(anoNascimento == ""){
 if (idade >= 18){
     alert(`Entrada Autorizada `);
 }
+// Fechar o site caso o cara seja menor de idade
 else{
     alert(`Você é menor de idade volte em ${18 - idade} anos`)
     window.close()
