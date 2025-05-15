@@ -27,7 +27,6 @@ console.log(estoqueVinho);
 console.log(`nome do vinho é ${nomeVinho}, o tipo de vinho é ${tipoVinho}, e a safra de seu vinho é ${safraVinho}, a quantidade é de ${estoqueVinho} vinhos no estoque `);
    */
 // Educação do site 
-SafraVinho()
 function educacao(){
     const agora = new Date();
     const hora = agora.getHours();
@@ -67,3 +66,32 @@ else{
     alert(`Você é menor de idade volte em ${18 - idade} anos`)
     window.close()
 }
+// inicio do cadastro de vinhos 
+// função nome do vinho 
+function NomeVinho(){
+    let nomeVinho = prompt("digite o nome do vinho que você deseja cadastrar: ");
+// Caso nome vinho vazio 
+    while(nomeVinho == ""){
+        alert("Falha, digite algo para cadastrar");
+        nomeVinho = prompt("digite o nome do vinho que você deseja cadastrar: ");
+    }
+}
+// função tipo de vinho 
+function TipoVinho(){
+    let tipoVinho = prompt(`Digite o tipo do seu vinho: \n - Vinho tinto \n - Vinho Rrse  \n - Vinho branco  \n - Vinho espumante `);
+// Caso do tipo de vinho vazio 
+    while (tipoVinho == ""){
+        alert("Falha, digite o tipo de seu vinho ");
+        tipoVinho = prompt(`Digite o tipo do seu vinho:\n - Vinho tinto \n - Vinho rose \n - Vinho branco  \n - Vinho espumante `); 
+    }
+}
+
+// função tipo de  safra
+function SafraVinho(){
+    let safraVinho = prompt(`Qual ano da safra do vinho ? `);
+    while (safraVinho == "" || isNaN(safraVinho)){
+        alert("erro");
+        safraVinho = prompt(`Qual ano da safra do vinho ? `);
+    }
+}
+// função
