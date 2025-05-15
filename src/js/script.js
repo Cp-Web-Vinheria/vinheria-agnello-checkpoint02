@@ -108,7 +108,7 @@ function Preco_Vinho(){
     let precoVinho = prompt("Qual o preço do vinho reegistrado: ");
 
     while (precoVinho == "" || isNaN(precoVinho)){
-        precoVinho = prompt("Qual o preço do vinho reegistrado: ");
+        precoVinho = prompt("Qual o preço do vinho registrado: ");
     }
     return precoVinho
 }
