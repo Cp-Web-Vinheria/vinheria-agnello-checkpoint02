@@ -129,6 +129,7 @@ const PrecoDoVinho = Preco_Vinho();
 
 Console_Vinhos()
 let i = 1
+let antiga_safra = SafraDoVinho
 while (true){
     let cadastrar = prompt("voce deseja cadatrar mais vinhos? s/n")
     while(cadastrar != "s" && cadastrar != "n"){
