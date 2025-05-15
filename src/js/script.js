@@ -145,7 +145,10 @@ while (true){
     const SafraDoVinho = Safra_Vinho();
     const EstoqueDeVinho = Estoque_Vinho();
     const PrecoDoVinho = Preco_Vinho();
-
-    console.log(`${nomeDoVinho} \n ${TipoDeVinho} \n ${SafraDoVinho} \n temos ${EstoqueDeVinho} vinhos no estoque \n R$ ${PrecoDoVinho}`);
+    if (SafraDoVinho < antiga_safra){
+        antiga_safra = SafraDoVinho
+    }
+        
+    console.log(`${nomeDoVinho} \n ${TipoDeVinho} \n ${SafraDoVinho} \n temos ${EstoqueDeVinho} vinhos no estoque \n R$ ${PrecoDoVinho}, Safra Mais antiga: ${antiga_safra}`);
     
 }
